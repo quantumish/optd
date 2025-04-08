@@ -4,7 +4,7 @@ use optd_core::cir::*;
 
 impl OptdDFContext {
     /// Given a DataFusion logical plan, returns an `optd` [`LogicalPlan`].
-    pub(crate) fn df_to_optd_relational(
+    pub fn df_to_optd_relational(
         &mut self,
         _df_logical_plan: &DataFusionLogicalPlan,
     ) -> anyhow::Result<LogicalPlan> {

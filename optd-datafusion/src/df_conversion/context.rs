@@ -4,7 +4,7 @@ use std::fmt::Debug;
 use std::{collections::HashMap, sync::Arc};
 
 /// A context for converting plans and expressions between `optd` and DataFusion.
-pub(crate) struct OptdDFContext {
+pub struct OptdDFContext {
     /// Maps table names to DataFusion [`TableProvider`]s.
     pub(crate) providers: HashMap<String, Arc<dyn TableProvider>>,
     /// DataFusion session state.
@@ -15,7 +15,7 @@ pub(crate) struct OptdDFContext {
 
 impl OptdDFContext {
     /// Creates a new empty `OptdDataFusionContext` with the provided session state.
-    pub(crate) fn new(session_state: &SessionState) -> OptdDFContext {
+    pub fn new(session_state: &SessionState) -> OptdDFContext {
         OptdDFContext {
             providers: HashMap::new(),
             session_state: session_state.clone(),

@@ -7,7 +7,7 @@ use std::sync::Arc;
 impl OptdDFContext {
     /// Converts an `optd` [`PhysicalPlan`] into an executable DataFusion [`ExecutionPlan`].
     #[async_recursion]
-    pub(crate) async fn optd_to_df_relational(
+    pub async fn optd_to_df_relational(
         &self,
         _optimized_plan: &PhysicalPlan,
     ) -> anyhow::Result<Arc<dyn ExecutionPlan>> {

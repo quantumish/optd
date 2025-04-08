@@ -15,8 +15,8 @@ trait-variant.workspace = true
 anyhow = "1.0.97"
 async-trait = "0.1.88"
 datafusion = "45"
-iceberg = "0.4.0"
-iceberg-catalog-memory = "0.4.0"
+# iceberg = "0.4.0"
+# iceberg-catalog-memory = "0.4.0"
 
 # Fix arrow bug.
 chrono = "0.4.39"

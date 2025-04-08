@@ -6,8 +6,8 @@ use datafusion::prelude::*;
 use futures::StreamExt;
 use std::time::SystemTime;
 
-mod df_conversion;
-mod iceberg_conversion;
+pub mod df_conversion;
+// mod iceberg_conversion;
 // mod mock;
 
 static NAMESPACE: &str = "memory";
